@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
-import { StoriesProps, Context, Story, Tester, Renderer } from './interfaces'
+import React, { useEffect, useState } from 'react'
+import { StoriesProps, Context, Story, Tester, Renderer } from './interfaces/index'
 import Container from './components/Container'
 import GlobalContext from './context/global'
 import StoriesContext from './context/stories';

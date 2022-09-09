@@ -1,22 +1,56 @@
 {
-  "name": "react-stories",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "@vitejs/plugin-react": "^2.1.0",
-    "typescript": "^4.6.4",
-    "vite": "^3.1.0"
-  }
+	"name": "react-stories",
+	"version": "0.0.1",
+	"description": "",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "webpack --mode production",
+		"build:dev": "webpack --mode development",
+		"prestart": "webpack --mode development",
+		"start": "webpack --watch --mode development",
+		"example": "cd example && npm start",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"predeploy": "cd example && npm install && npm run build",
+		"deploy": "gh-pages -d example/dist",
+		"buildall": "npm install && webpack --mode production && cd example && npm install && npm run build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ManuelMaciel/react-stories.git"
+	},
+	"keywords": [
+		"stories",
+		"react"
+	],
+	"author": "ManuelMaciel",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ManuelMaciel/react-stories.git/issues"
+	},
+	"homepage": "https://github.com/ManuelMaciel/react-stories#readme",
+	"devDependencies": {
+		"@babel/core": "^7.19.0",
+		"@babel/preset-env": "^7.19.0",
+		"@babel/preset-react": "^7.18.6",
+		"@teamsupercell/typings-for-css-modules-loader": "^2.5.1",
+		"@types/react": "^18.0.18",
+		"@types/react-dom": "^18.0.6",
+		"babel-loader": "^8.2.5",
+		"css-loader": "^6.7.1",
+		"gh-pages": "^4.0.0",
+		"react": "^18.2.0",
+		"react-svg-loader": "^3.0.3",
+		"source-map-loader": "^4.0.0",
+		"style-loader": "^3.3.1",
+		"ts-loader": "^9.3.1",
+		"typescript": "^4.8.3",
+		"webpack": "^5.74.0",
+		"webpack-cli": "^4.10.0",
+		"webpack-dev-server": "^4.11.0"
+	},
+	"peerDependencies": {
+		"react": "^18.2.0"
+	},
+	"dependencies": {}
 }

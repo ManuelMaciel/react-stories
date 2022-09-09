@@ -1,4 +1,5 @@
-import { ProgressWrapperProps } from './../interfaces'
+import React from 'react'
+import { ProgressWrapperProps } from '../interfaces/index'
 
 const ProgressWrapper = (props: ProgressWrapperProps) => (
 	<div style={{ ...styles.progress, ...getProgressWrapperStyle(props) }}>

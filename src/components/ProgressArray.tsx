@@ -1,9 +1,10 @@
 import { useContext, useState, useEffect, useRef } from 'react'
 import Progress from './Progress'
-import { ProgressContext, Context, StoriesContext as StoriesContextInterface } from './../interfaces'
+import { ProgressContext, Context, StoriesContext as StoriesContextInterface } from '../interfaces/index'
 import ProgressCtx from '../context/progress'
 import GlobalContext from '../context/global'
 import StoriesContext from '../context/stories'
+import React from 'react'
 
 export default () => {
 	const [count, setCount] = useState<number>(0)

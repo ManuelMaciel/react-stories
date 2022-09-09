@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React from 'react';
 import Spinner from '../components/Spinner';
-import { Renderer, Tester } from './../interfaces';
+import { Renderer, Tester } from '../interfaces/index';
 import WithHeader from './wrappers/withHeader';
 import WithSeeMore from './wrappers/withSeeMore';
 

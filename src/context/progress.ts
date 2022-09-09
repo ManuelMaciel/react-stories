@@ -1,5 +1,5 @@
 import { createContext } from 'react'
-import { ProgressContext } from './../interfaces'
+import { ProgressContext } from '../interfaces/index'
 
 export default createContext<ProgressContext>({
 	currentId: 0,

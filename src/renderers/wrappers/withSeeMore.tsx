@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Action, SeeMoreProps, Story } from '../../interfaces';
+import React, { useState } from 'react';
+import { Action, SeeMoreProps, Story } from '../../interfaces/index';
 import SeeMore from "./../../components/SeeMore";
 
 const withSeeMore: React.FC<{

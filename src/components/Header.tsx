@@ -1,4 +1,5 @@
-import { HeaderProps } from './../interfaces'
+import React from 'react'
+import { HeaderProps } from '../interfaces/index'
 
 const Header = ({ profileImage, heading, subheading }: HeaderProps) =>
 	<div style={styles.main}>

@@ -1,13 +1,14 @@
+import React from 'react';
 import { useEffect, useContext } from 'react'
 import GlobalContext from '../context/global'
-import { Context } from './../interfaces'
-import { SeeMoreProps } from './../interfaces'
+import { Context } from '../interfaces/index'
+import { SeeMoreProps } from '../interfaces/index'
 
 export default function seeMore(props: SeeMoreProps) {
 	const SeeMoreContent = props.seeMoreContent;
 	const CustomCollapsed = props.customCollapsed;
 
-	const { keyboardNavigation } = useContext<GlobalCtx>(GlobalContext);
+	const { keyboardNavigation } = useContext<Context>(GlobalContext);
 
 	useEffect(() => {
 		const isClient = (typeof window !== 'undefined' && window.document);

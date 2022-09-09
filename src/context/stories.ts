@@ -2,7 +2,7 @@ import { createContext } from 'react';
 import {
 	StoriesContext as StoriesContextInterface,
 	Story,
-} from '../interfaces';
+} from '../interfaces/index';
 
 export const initialContext: { stories: Story[] } = {
 	stories: [],

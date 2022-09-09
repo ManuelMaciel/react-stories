@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import { Context } from '../interfaces';
+import { Context } from '../interfaces/index';
 
 export const initialContext = {
 	defaultInterval: 4000,

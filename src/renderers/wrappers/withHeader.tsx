@@ -1,5 +1,5 @@
 import React from 'react';
-import { Story } from '../../interfaces';
+import { Story } from '../../interfaces/index';
 import Header from "./../../components/Header";
 
 const withHeader: React.FC<{ story: Story, globalHeader: Function }> = ({ story, globalHeader, children }) => {

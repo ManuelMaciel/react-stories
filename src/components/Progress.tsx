@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { ProgressProps, ProgressContext } from './../interfaces'
+import { ProgressProps, ProgressContext } from '../interfaces/index'
 import ProgressWrapper from './ProgressWrapper'
 import ProgressCtx from '../context/progress'
 

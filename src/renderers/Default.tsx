@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Renderer, Tester } from './../interfaces';
+import { Renderer, Tester } from '../interfaces/index';
 
 export const renderer: Renderer = ({ story, action }) => {
 	React.useEffect(() => {
