@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useContext } from 'react'
-import GlobalContext from '../context/global'
+import GlobalContext from '../context/Global'
 import { Context } from '../interfaces/index'
 import { SeeMoreProps } from '../interfaces/index'
 

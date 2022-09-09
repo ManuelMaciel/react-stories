@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { ProgressProps, ProgressContext } from '../interfaces/index'
 import ProgressWrapper from './ProgressWrapper'
-import ProgressCtx from '../context/progress'
+import ProgressCtx from '../context/Progress'
 
 export default (props: ProgressProps) => {
 	const { bufferAction, pause } = useContext<ProgressContext>(ProgressCtx)

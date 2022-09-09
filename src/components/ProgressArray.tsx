@@ -1,9 +1,9 @@
 import { useContext, useState, useEffect, useRef } from 'react'
 import Progress from './Progress'
 import { ProgressContext, Context, StoriesContext as StoriesContextInterface } from '../interfaces/index'
-import ProgressCtx from '../context/progress'
-import GlobalContext from '../context/global'
-import StoriesContext from '../context/stories'
+import ProgressCtx from '../context/Progress'
+import GlobalContext from '../context/Global'
+import StoriesContext from '../context/Stories'
 import React from 'react'
 
 export default () => {

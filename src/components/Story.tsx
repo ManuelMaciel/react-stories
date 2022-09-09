@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { StoryProps, Context } from "../interfaces/index";
-import GlobalContext from "../context/global";
+import GlobalContext from "../context/Global";
 
 const Story = (props: StoryProps) => {
 	const globalContext = useContext<Context>(
