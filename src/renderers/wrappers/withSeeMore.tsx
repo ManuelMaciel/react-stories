@@ -5,7 +5,8 @@ import SeeMore from "./../../components/SeeMore";
 const withSeeMore: React.FC<{
 	story: Story,
 	action: Action,
-	customCollapsed?: SeeMoreProps["customCollapsed"]
+	customCollapsed?: SeeMoreProps["customCollapsed"],
+	children
 }> = ({ story, action, customCollapsed, children }) => {
 	const [showMore, setShowMore] = useState(false);
 	const toggleMore = (show) => {
